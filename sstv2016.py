@@ -30,7 +30,7 @@ def _remote(keys, tv_addr,delay=1):
                     if k != len(_keys):
                         time.sleep(delay)                        
                 break
-
+        time.sleep(delay)
     finally:
         yield from websocket.close()
 
